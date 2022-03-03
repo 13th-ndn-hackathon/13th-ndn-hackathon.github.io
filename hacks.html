@@ -11,7 +11,7 @@
     <title>Hacks Proposals - 13th Named Data Networking (NDN) Hackathon</title>
     <meta name="description" content="March 25-27, 2022, University of Memphis, TN">
     <meta name="author" content="13th NDN Hackathon Organizing Committee">
-    <link rel="canonical" href="http://13th-ndn-hackathon.named-data.net/hacks">
+    <link rel="canonical" href="https://13th-ndn-hackathon.named-data.net/hacks">
 
     <link rel="stylesheet" type="text/css" href="/assets/site-c3c0b760b35f1d88faacaed27d85351cd33cf1fd88a5019ec0a70f46743a23f4.css">
 
@@ -107,7 +107,7 @@
       <form class="navbar-form navbar-right" role="search" action="https://google.com/search" method="get">
         <div class="form-group">
 
-          <input type="hidden" name="q" value="site:http://13th-ndn-hackathon.named-data.net">
+          <input type="hidden" name="q" value="site:https://13th-ndn-hackathon.named-data.net">
 
           <input type="text" name="q" class="form-control" placeholder="Search">
         </div>
@@ -161,6 +161,7 @@
 </ul>
 
 <h2 id="1-ndn-for-in-vehicle-networking">1. NDN for In-Vehicle Networking</h2>
+
 <p><strong>Project Lead:</strong></p>
 <ul>
   <li>Christos Papadopoulos</li>
@@ -174,6 +175,7 @@ In-vehicle networks are rapidly evolving, moving away from existing in-vehicle n
 <p>In this project we will create an in-vehicle testbed by porting NDN into an emulated in-vehicle network. We will use Raspberry Pis to emulate in-vehicle communication and VSS to name signals. Raspberry Pis equipped with CAN hats can implement three different networking technologies: CAN, LIN and Ethernet. We will use all three. Communication will be driven by the ROAD CAN trace collected by ORNL. We will test various aspects, such as security, integrity, authentication, resistance to DoS attacks, transport efficiency including error recovery and latency. We will create translators between CAN frames and NDN named objects. We will explore the design, implementation, and performance of communication over the testbed.</p>
 
 <p>There are several outcomes from this project:</p>
+
 <ul>
   <li>The namespace design</li>
   <li>The impact of shifting to a data-centric implementation such as NDN</li>
@@ -183,6 +185,7 @@ In-vehicle networks are rapidly evolving, moving away from existing in-vehicle n
 </ul>
 
 <h2 id="2-implementing-gptp-in-ndn">2. Implementing gPTP in NDN</h2>
+
 <p><strong>Project Lead:</strong></p>
 <ul>
   <li>Christos Papadopoulos</li>
@@ -195,6 +198,7 @@ Time-Sensitive Networking (TSN) is a set of standards under development by the T
 <a href="https://docs.zephyrproject.org/latest/reference/networking/gptp.html">gPTP</a></p>
 
 <h2 id="3-integrate-content-connectivity-and-location-aware-forwarding-cclf-into-nfd">3. Integrate Content Connectivity and Location-Aware Forwarding (CCLF) into NFD</h2>
+
 <p><strong>Project Lead:</strong></p>
 <ul>
   <li>Muktadir Chowdhury</li>
@@ -202,27 +206,31 @@ Time-Sensitive Networking (TSN) is a set of standards under development by the T
 
 <p><strong>Description</strong>
 Connectivity and Location-Aware Forwarding (CCLF) is a forwarding strategy for NDN-based MANETs.  CCLF broadcasts NDN packetsand lets each node make independent decisions on whether to forward packets based on per-prefix performance measurements andany available geo-location information. In addition, it employs a density-aware suppression mechanism to reduce unnecessary packet transmissions. Moreover, we have developed a link adaptation layer for ad-hoc links to bridge the gap between CCLF and the capabilities of the underlying link.
-CCLF is implemented and experimented with using ndnSIM. The goal of the project is to make CCLF functional in NFD and test it with minindn-wifi. 
+CCLF is implemented and experimented with using ndnSIM. The goal of the project is to make CCLF functional in NFD and test it with minindn-wifi.
 To accomplish the integration we have to</p>
+
 <ul>
   <li>add the CCLF strategy and CCLF Measurement Accessor in the Strategy module</li>
   <li>implement the Ad-Hoc Link Adaptation Layer which queues the outgoing packet and keeps track of the number of nodes around.</li>
 </ul>
 
 <h2 id="4-ndnsd-service-publishing-and-discovery-in-ndn">4. NDNSD: Service Publishing and Discovery in NDN</h2>
+
 <p><strong>Project Lead:</strong></p>
 <ul>
   <li>Saurab Dulal</li>
 </ul>
 
 <p><strong>Description</strong>
-NDNSD is a fully distributed and general-purpose service discovery protocol for NDN that works in a wide range of environments, e.g., LAN, WAN, and IoT. It provides an API for applications to advertise and discover services. Internally, it uses NDN Sync for service announcement and discovery. In addition, it offers several design features such as hierarchical naming, service information specification, measurement information, and service accessibility. Among these 
+NDNSD is a fully distributed and general-purpose service discovery protocol for NDN that works in a wide range of environments, e.g., LAN, WAN, and IoT. It provides an API for applications to advertise and discover services. Internally, it uses NDN Sync for service announcement and discovery. In addition, it offers several design features such as hierarchical naming, service information specification, measurement information, and service accessibility. Among these
 features, we have fully implemented service publishing and discovery API and naming, and have partially implemented service information specification (a.k.a service-info). The goal of this project is to implement 1) the service-information specification (complete the implementation) ii) service accessibility, and iii) measurement information. If time permits, we will also evaluate NDNSD against some of the existing protocols (e.g. SPDP).</p>
 
-<p><a href="https://github.com/dulalsaurab/NDNSD">Current implementation</a>
-<a href="https://umwa.memphis.edu/etd/index.php/view/download/sdulal/6651/6651.pdf">NDNSD</a></p>
+<p><a href="https://github.com/dulalsaurab/NDNSD">Current implementation</a></p>
+
+<p><a href="https://umwa.memphis.edu/etd/index.php/view/download/sdulal/6651/6651.pdf">NDNSD</a></p>
 
 <h2 id="5-profiling-yanfd">5. Profiling YaNFD</h2>
+
 <p><strong>Project Lead:</strong></p>
 <ul>
   <li>UCLA team</li>
@@ -272,6 +280,6 @@ features, we have fully implemented service publishing and discovery API and nam
 
     </footer>
 
-    <script src="/assets/site-fc869a5ae3b833acedbbc099d2cbe86b5672ff61641b2d23c1c5929672c58a96.js" type="text/javascript"></script>
+    <script src="/assets/site-e04449cd79aaea1bdd392498ce22ca51eb2b371c9e08f35c673cf2ef57edf9dd.js" type="text/javascript"></script>
   </body>
 </html>

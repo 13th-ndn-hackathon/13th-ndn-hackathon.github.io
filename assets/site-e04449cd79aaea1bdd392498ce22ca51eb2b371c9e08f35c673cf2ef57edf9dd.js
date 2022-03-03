@@ -15315,7 +15315,7 @@ window.twttr = (function(d, s, id) {
                     console.log(repo);
                     console.log(results.data.name);
                     if (results.data.name !== undefined) {
-                        element.empty().append('<a href="http://13th-ndn-hackathon.named-data.net/' + repo + '" target="_blank"><i class="fa fa-file-text-o"></i></a>');
+                        element.empty().append('<a href="https://13th-ndn-hackathon.named-data.net/' + repo + '" target="_blank"><i class="fa fa-file-text-o"></i></a>');
                     }
 		}
 	    });
