@@ -161,12 +161,12 @@
   
 <ul id="markdown-toc">
   <li><a href="#0-team-formation" id="markdown-toc-0-team-formation">0. Team formation</a></li>
-  <li><a href="#1-ndn-for-in-vehicle-networking" id="markdown-toc-1-ndn-for-in-vehicle-networking">1. NDN for In-Vehicle Networking</a></li>
-  <li><a href="#2-implementing-gptp-in-ndn" id="markdown-toc-2-implementing-gptp-in-ndn">2. Implementing gPTP in NDN</a></li>
+  <li><a href="#1-ndn-for-in-vehicle-networking" id="markdown-toc-1-ndn-for-in-vehicle-networking">1. <del>NDN for In-Vehicle Networking</del></a></li>
+  <li><a href="#2-implementing-gptp-in-ndn" id="markdown-toc-2-implementing-gptp-in-ndn">2. <del>Implementing gPTP in NDN</del></a></li>
   <li><a href="#3-integrate-content-connectivity-and-location-aware-forwarding-cclf-into-nfd" id="markdown-toc-3-integrate-content-connectivity-and-location-aware-forwarding-cclf-into-nfd">3. Integrate Content Connectivity and Location-Aware Forwarding (CCLF) into NFD</a></li>
   <li><a href="#4-ndnsd-service-publishing-and-discovery-in-ndn" id="markdown-toc-4-ndnsd-service-publishing-and-discovery-in-ndn">4. NDNSD: Service Publishing and Discovery in NDN</a></li>
   <li><a href="#5-profiling-yanfd" id="markdown-toc-5-profiling-yanfd">5. Profiling YaNFD</a></li>
-  <li><a href="#6-python-ndn-validator" id="markdown-toc-6-python-ndn-validator">6. Python-ndn validator</a></li>
+  <li><a href="#6-python-ndn-validator" id="markdown-toc-6-python-ndn-validator">6. Python-ndn Validator</a></li>
   <li><a href="#7-hydra-security-implementation" id="markdown-toc-7-hydra-security-implementation">7. Hydra Security Implementation</a></li>
 </ul>
 
@@ -174,7 +174,7 @@
 
 <p><a href="https://docs.google.com/spreadsheets/d/1YlpFlj6EwxY1zssOoRCyzAoedKRQLXS-fsgs2S-Ce4M/edit?usp=sharing">Team member signup doc</a></p>
 
-<h2 id="1-ndn-for-in-vehicle-networking">1. NDN for In-Vehicle Networking</h2>
+<h2 id="1-ndn-for-in-vehicle-networking">1. <del>NDN for In-Vehicle Networking</del></h2>
 
 <p><strong>Project Lead:</strong></p>
 <ul>
@@ -236,7 +236,7 @@ message queues available in linux (man 7 mq_overview) or your own construct.</li
   <li>document your path and create a small blog-post/article that could be hosted as a resource of how to present a resource like an automotive dataset using NDN.</li>
 </ul>
 
-<h2 id="2-implementing-gptp-in-ndn">2. Implementing gPTP in NDN</h2>
+<h2 id="2-implementing-gptp-in-ndn">2. <del>Implementing gPTP in NDN</del></h2>
 
 <p><strong>Project Lead:</strong></p>
 <ul>
@@ -355,9 +355,9 @@ features, we have fully implemented service publishing and discovery API and nam
 <p><strong>Description</strong>
 <a href="https://github.com/named-data/YaNFD">YaNFD</a> is an NDN forwarder implemented in Golang. Since Go can use concurrency very efficiently, it is expected that YaNFD should have superior performance compared to NFD, which is single threaded. However, the performance gains observed currently are not as good as expected. This project involves profiling and investigating why the performance of YaNFD is not as expected.</p>
 
-<h2 id="6-python-ndn-validator">6. Python-ndn validator</h2>
+<h2 id="6-python-ndn-validator">6. Python-ndn Validator</h2>
 
-<p><strong>Project Lead</strong></p>
+<p><strong>Project Lead:</strong></p>
 <ul>
   <li>Xinyu Ma</li>
 </ul>
@@ -369,11 +369,11 @@ Python-ndn is a client NDN library implemented in Python. Python-ndn has a valid
 
 <p>Python-ndn already supports VerSec-based validators. In this project, we will provide the VerSec support on the data producer side to help facilitate the data signing, and investigate the possibility of providing VerSec support on ndn-cxx.</p>
 
-<p>Current implemented: https://github.com/named-data/python-ndn</p>
+<p><a href="https://github.com/named-data/python-ndn">python-ndn git repository</a></p>
 
 <h2 id="7-hydra-security-implementation">7. Hydra Security Implementation</h2>
 
-<p><strong>Project Lead</strong></p>
+<p><strong>Project Leads:</strong></p>
 <ul>
   <li>Justin Presley</li>
   <li>Proyash Podder</li>
@@ -382,7 +382,7 @@ Python-ndn is a client NDN library implemented in Python. Python-ndn has a valid
 <p><strong>Description</strong>
 Hydra, a distributed data repository system built over NDN, runs over a federation of storage servers provided by different user organizations. Users can publish files to Hydra, and the files can be shared following defined access policies. The Hydra codebase is constantly evolving and currently supports data insertion, deletion, and retrieval along with system queries. The security part however has not been formalized nor implemented yet. Therefore, in this project we would like to layout the foundations for Hydra security which include having a NOC (Network Operations Center) that authorizes Hydra nodes to join the system. The NOC also contains a trust schema of some sort that outlines who to trust in terms of users. This project is expansive (participants could authorize users based on their Google account). Nevertheless, we simply aim to at least get the foundation down so that we can confidently deploy and keep a Hydra instance running.</p>
 
-<p>The Currently Implemented Hydra: https://github.com/justincpresley/ndn-hydra</p>
+<p><a href="https://github.com/justincpresley/ndn-hydra">Hydra git repository</a></p>
 
 </section>
 
